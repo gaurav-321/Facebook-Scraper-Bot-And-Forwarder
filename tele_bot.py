@@ -6,8 +6,8 @@ import undetected_chromedriver as uc
 
 init()
 red, blue, green = Fore.RED, Fore.BLUE, Fore.GREEN
-token = "5200561038:AAHI9BgLj4sKGq-LqJGIHtgnvRv8cHVrsfw"
-channel_id = 1396274088
+token = "token"
+channel_id = 999999999999
 time_delay_hr = 2
 updater = Updater(token=token)
 
@@ -50,7 +50,7 @@ def repeat_task():
     last_post = None
     while True:
         print(f"{green}[+]Started The Program with time delay {time_delay_hr} hrs")
-        posts = get_posts("https://www.facebook.com/Rblcoin")
+        posts = get_posts("https://www.facebook.com/page_name")
 
         if last_post != posts[0]:
             print(f"{green}[+]New Post Found, Sending it")
